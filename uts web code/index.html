@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha MOOO | Premium Tea Experience</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primary-green: #a8d5ba;
+      --secondary-green: #3e8e41;
+      --accent-pink: #ff85a2;
+      --accent-yellow: #ffe26a;
+      --accent-blue: #84d0f1;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f6fef9;
+      overflow-x: hidden;
+    }
+
+    .nav-btn {
+      background: linear-gradient(90deg, var(--accent-pink), var(--accent-yellow));
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .nav-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="w-full bg-white fixed top-0 shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <img src="images/logo.Png"  class="w-10 h-10 rounded-full" />
+        <h1 class="text-2xl font-bold text-green-700">Matcha MOOO</h1>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="nav-btn">Home</a>
+        <a href="about.html" class="nav-btn">About</a>
+        <a href="products.html" class="nav-btn">Products</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pt-32 bg-gradient-to-r from-green-200 to-green-100 min-h-screen flex items-center justify-center px-4">
+    <div class="max-w-7xl w-full grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-5xl font-extrabold text-green-900 leading-tight">Discover Pure Matcha</h2>
+        <p class="mt-4 text-lg text-green-800">Experience the finest ceremonial matcha straight from Japan, blended with love for your wellness journey.</p>
+        <a href="products.html" class="mt-6 inline-block nav-btn">Shop Now</a>
+      </div>
+      <div class="flex justify-center">
+        <img src="images/hero-matcha.jpeg"  class="rounded-xl shadow-lg floating w-full max-w-md" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center text-green-700 mb-12">Why Choose Our Matcha?</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-green-50 p-6 rounded-xl shadow-md text-center">
+          <img src="images/farm.jpeg" class="rounded-full mx-auto mb-4 w-28 h-28 object-cover" />
+          <h4 class="text-xl font-bold text-green-800 mb-2">Sourced in Japan</h4>
+          <p>Our tea leaves are hand-picked in Uji — Japan’s most revered matcha region.</p>
+        </div>
+        <div class="bg-yellow-50 p-6 rounded-xl shadow-md text-center">
+          <img src="images/energy.jpeg"  class="rounded-full mx-auto mb-4 w-28 h-28 object-cover" />
+          <h4 class="text-xl font-bold text-yellow-700 mb-2">Natural Energy</h4>
+          <p>Enjoy calm focus with L-theanine and smooth, long-lasting energy.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-xl shadow-md text-center">
+          <img src="images/ceremonial.jpeg" class="rounded-full mx-auto mb-4 w-28 h-28 object-cover" />
+          <h4 class="text-xl font-bold text-blue-700 mb-2">Antioxidant Rich</h4>
+          <p>Matcha contains up to 137x the antioxidants of brewed green tea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-br from-green-100 to-green-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-4xl font-bold text-center text-green-800 mb-12">Best Sellers</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="images/fresh-matcha.jpg" alt="Fresh ceremonial matcha" class="rounded-md mb-4 w-full h-60 object-cover" />
+          <h4 class="text-xl font-bold mb-2">Ceremonial Matcha</h4>
+          <p class="text-gray-600 mb-4">Perfect for traditional tea rituals with rich umami flavor.</p>
+          <a href="products.html" class="nav-btn w-full text-center block">View Product</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="images/matcha-latte.jpg" alt="Matcha latte on marble table" class="rounded-md mb-4 w-full h-60 object-cover" />
+          <h4 class="text-xl font-bold mb-2">Culinary Matcha</h4>
+          <p class="text-gray-600 mb-4">Smooth and vibrant — great for baking and lattes.</p>
+          <a href="products.html" class="nav-btn w-full text-center block">View Product</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+          <img src="images/matcha-kit.jpg" alt="Matcha starter kit" class="rounded-md mb-4 w-full h-60 object-cover" />
+          <h4 class="text-xl font-bold mb-2">Matcha Starter Kit</h4>
+          <p class="text-gray-600 mb-4">Everything you need to start your matcha journey.</p>
+          <a href="products.html" class="nav-btn w-full text-center block">View Product</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
